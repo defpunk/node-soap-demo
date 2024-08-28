@@ -3,11 +3,13 @@ Demo repo for exploring soap webservices
 
 to see the SOAP webservice in action
 
-1. open http://localhost:8000/helloService
-1. run npm i
-2. run node server.js
-3. You can now access the service on http://localhost:8000/helloService?wsdl
-4. Here's an example request you can send via postman
+1. run `npm i`
+2. run `node server.js`
+3. open `http://localhost:8000/helloService`
+4. You can now access the service on http://localhost:8000/helloService?wsdl
+5. Here's an example request you can send via postman
+
+
 ```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://www.examples.com/wsdl/HelloService.wsdl">
    <soapenv:Header/>
@@ -18,6 +20,7 @@ to see the SOAP webservice in action
    </soapenv:Body>
 </soapenv:Envelope>
 ```
+
 expected response is
 
 ```
